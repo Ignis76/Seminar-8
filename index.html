@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazakhstan: Two Modernization Eras (1954-1965 vs 1999-2012)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Courier+Prime&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Paper Texture Background -->
+    <div class="paper-texture"></div>
+
+    <!-- Navigation -->
+    <nav class="museum-nav">
+        <div class="brand">ARCHIVE <span class="gold-text">VIII-IX</span></div>
+        <ul class="nav-links">
+            <li><a href="#prologue">Prologue</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#chronicle">Context</a></li>
+            <li><a href="#pett">PETT Analysis</a></li>
+            <li><a href="#dossier">PEST Dossier</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#epilogue">Epilogue</a></li>
+        </ul>
+        <button class="theme-toggle" title="Toggle dark mode">
+            <i class="fas fa-moon"></i> Dark
+        </button>
+    </nav>
+
+    <!-- Header: Typewriter Effect -->
+    <header id="prologue">
+        <div class="container header-content">
+            <h1 class="main-title">Kazakhstan:<br>Two Eras of Modernization</h1>
+            <p class="subtitle">A Comparative Study: 1954–1965 vs. 1999–2012</p>
+            
+            <!-- Typewriter Container -->
+            <div class="typewriter-box">
+                <span class="prefix">SUBJECT:</span>
+                <span class="type-text"></span><span class="cursor">|</span>
+            </div>
+
+            <div class="scroll-down" onclick="document.getElementById('research').scrollIntoView({behavior: 'smooth'});">
+                <span>Begin Investigation</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Research Question Section -->
+    <section id="research" class="section-paper">
+        <div class="container">
+            <h2 class="section-title">I. Research Question & Significance</h2>
+            
+            <div class="research-box">
+                <div class="research-item">
+                    <h3><i class="fas fa-question-circle"></i> Main Research Question</h3>
+                    <p><strong>How did state-driven modernization in 1954–1965 and 1999–2012 reshape Kazakhstan's society, economy, and national identity?</strong></p>
+                </div>
+
+                <div class="research-item">
+                    <h3><i class="fas fa-lightbulb"></i> Sub-Questions</h3>
+                    <ul class="research-list">
+                        <li>What were the political motivations behind each modernization project?</li>
+                        <li>How did demographic changes (Russification vs. Kazakhization) shape national consciousness?</li>
+                        <li>What were the economic priorities and their long-term consequences?</li>
+                        <li>What role did external factors (Cold War, global markets) play?</li>
+                    </ul>
+                </div>
+
+                <div class="research-item">
+                    <h3><i class="fas fa-star"></i> Why This Matters</h3>
+                    <p>Comparing these periods reveals how Kazakhstan transitioned from <strong>imperial periphery to independent nation-state</strong>, and how state policy can fundamentally reshape a society within a single generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Context Section -->
+    <section id="chronicle" class="section-darker">
+        <div class="container">
+            <h2 class="section-title">II. Historical Context</h2>
+            
+            <div class="comparison-cards">
+                <!-- Soviet Card -->
+                <div class="card soviet-style">
+                    <div class="card-header">
+                        <h3>🇺🇷 The Virgin Lands Era</h3>
+                        <span class="date-badge red">1954–1965</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Political Context:</h4>
+                        <p>Nikita Khrushchev's "Thaw" after Stalin's death. Soviet leadership sought to modernize agriculture and secure food security.</p>
+                        
+                        <h4>Key Initiative:</h4>
+                        <p><strong>Virgin Lands Campaign (Целинные земли):</strong> Mobilized over 300,000 settlers to cultivate 25 million hectares of steppe.</p>
+                        
+                        <h4>Social Impact:</h4>
+                        <ul class="fact-list">
+                            <li>Massive Slavic migration: Russians, Ukrainians, Belarusians arrived en masse</li>
+                            <li>Kazakh population dropped to ~29% (1959) — lowest historical point</li>
+                            <li>Rapid urbanization: new cities (Karaganda, Aktobe) emerged</li>
+                            <li>Russian became lingua franca; Kazakh schools closed</li>
+                        </ul>
+
+                        <h4>Economic Consequences:</h4>
+                        <ul class="fact-list">
+                            <li>Soviet Union became wheat exporter (initially)</li>
+                            <li>Foundation of heavy industry: coal, steel production</li>
+                            <li>Severe ecological damage: soil erosion, desertification</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Independence Card -->
+                <div class="card indep-style">
+                    <div class="card-header">
+                        <h3>🇰🇿 The Oil Boom Era</h3>
+                        <span class="date-badge teal">1999–2012</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Political Context:</h4>
+                        <p>Post-Soviet recovery under President Nursultan Nazarbayev. Kazakhstan transitioned to market economy and established itself as independent nation.</p>
+                        
+                        <h4>Key Initiative:</h4>
+                        <p><strong>Oil & Gas Boom:</strong> Discovery of Kashagan (2000), Tengiz, and Karachaganak fields. Global oil prices surged ($100+/barrel by 2008).</p>
+                        
+                        <h4>Social Impact:</h4>
+                        <ul class="fact-list">
+                            <li>"Kazakhization" policy: active promotion of Kazakh language and culture</li>
+                            <li>Repatriation program (Орalmans): 1M+ ethnic Kazakhs returned from diaspora</li>
+                            <li>Kazakh share rose to 63%+ (2009)</li>
+                            <li>Capital relocation to Astana (2006) — symbol of new nation-state</li>
+                        </ul>
+
+                        <h4>Economic Consequences:</h4>
+                        <ul class="fact-list">
+                            <li>GDP per capita: $1,200 (1999) → $12,000 (2012)</li>
+                            <li>National Fund accumulation: sovereign wealth fund</li>
+                            <li>Foreign direct investment: $150+ billion</li>
+                            <li>Rapid urbanization and infrastructure boom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PETT Analysis Section -->
+    <section id="pett" class="section-paper">
+        <div class="container">
+            <h2 class="section-title">III. PETT Analysis: Understanding Change & Continuity</h2>
+            
+            <p class="section-desc">PETT analysis helps us evaluate how significant and how fast changes occurred. It examines <strong>Pace</strong>, <strong>Extent</strong>, <strong>Turning Points</strong>, and <strong>Trends</strong>.</p>
+
+            <div class="pett-container">
+                <!-- 1954-1965 PETT -->
+                <div class="pett-card">
+                    <h3 class="pett-title red-bg">1954–1965: Virgin Lands Campaign</h3>
+                    
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">P</span> Pace (Speed)</h4>
+                        <p><strong>VERY RAPID:</strong> In just 1-2 years, hundreds of thousands relocated. Entire new cities built in months. Soviet bureaucracy moved at unprecedented speed to mobilize resources.</p>
+                        <p class="example"><em>Example:</em> Karaganda's population grew from 75K (1950) to 150K (1965).</p>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">E</span> Extent (Scale)</h4>
+                        <p><strong>MASSIVE:</strong> 25 million hectares plowed. 300,000+ settlers. Altered demographics permanently (Kazakhs fell to 29%).</p>
+                        <p class="example"><em>Example:</em> Virgin Lands constituted ~1/3 of total Soviet grain production by 1958.</p>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">T</span> Turning Points</h4>
+                        <ul>
+                            <li><strong>1954:</strong> Khrushchev's decree launches campaign</li>
+                            <li><strong>1959:</strong> Demographic nadir for Kazakhs (29%)</li>
+                            <li><strong>1962:</strong> Harvest failures; program loses momentum</li>
+                            <li><strong>1965:</strong> End of "thaw"; transition to stagnation era</li>
+                        </ul>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">T</span> Trends</h4>
+                        <ul>
+                            <li>✓ <strong>Urbanization:</strong> Rural steppe → industrial cities</li>
+                            <li>✓ <strong>Russification:</strong> Russian language dominance</li>
+                            <li>✓ <strong>Industrialization:</strong> Coal, steel, oil refining</li>
+                            <li>✗ <strong>Environmental crisis:</strong> Soil erosion, desertification</li>
+                            <li>✗ <strong>Cultural erosion:</strong> Suppression of Kazakh identity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 1999-2012 PETT -->
+                <div class="pett-card">
+                    <h3 class="pett-title teal-bg">1999–2012: Oil Boom & Nation-Building</h3>
+                    
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">P</span> Pace (Speed)</h4>
+                        <p><strong>RAPID, BUT CONTROLLED:</strong> Economic growth steady (avg. 8-9% annually). Infrastructure projects phased over 10+ years. Less chaotic than Virgin Lands.</p>
+                        <p class="example"><em>Example:</em> Astana constructed over 15 years, methodically planned.</p>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">E</span> Extent (Scale)</h4>
+                        <p><strong>PROFOUND:</strong> Economic transformation: GDP 3x increase. Demographic reversal: Kazakhs back to majority. New capital city. International integration.</p>
+                        <p class="example"><em>Example:</em> Kazakh share rose from 48% (1999) to 63% (2009) through repatriation + Slavic emigration.</p>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">T</span> Turning Points</h4>
+                        <ul>
+                            <li><strong>1999:</strong> Oil prices surge (Brent crude rises)</li>
+                            <li><strong>2000:</strong> National Fund established</li>
+                            <li><strong>2006:</strong> Capital moves to Astana</li>
+                            <li><strong>2008-2009:</strong> Financial crisis (temporary slowdown)</li>
+                            <li><strong>2012:</strong> Kazakhstan enters TOP-50 developing economies</li>
+                        </ul>
+                    </div>
+
+                    <div class="pett-item">
+                        <h4><span class="pett-letter">T</span> Trends</h4>
+                        <ul>
+                            <li>✓ <strong>Kazakhization:</strong> Language revival, cultural renaissance</li>
+                            <li>✓ <strong>Economic liberalization:</strong> Private sector growth</li>
+                            <li>✓ <strong>Demographic recovery:</strong> Ethnic Kazakh majority restored</li>
+                            <li>✓ <strong>Urbanization (II wave):</strong> Modern mega-cities</li>
+                            <li>⚠ <strong>Political centralization:</strong> Super-presidency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PETT Comparison Table -->
+            <div class="pett-comparison-table">
+                <h3>PETT Comparison: Side by Side</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PETT Factor</th>
+                            <th>1954–1965</th>
+                            <th>1999–2012</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pace</strong></td>
+                            <td>Extremely fast, chaotic mobilization</td>
+                            <td>Fast but methodical, market-driven</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Extent</strong></td>
+                            <td>25M ha cultivated; Kazakhs 29%</td>
+                            <td>GDP 3x; Kazakhs 63%; New capital</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Turning Points</strong></td>
+                            <td>1954 start, 1959 peak, 1962 decline</td>
+                            <td>1999 oil surge, 2006 Astana, 2008 crisis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trends</strong></td>
+                            <td>Russification, industrialization, envir. crisis</td>
+                            <td>Kazakhization, liberalization, urbanization</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEST Dossier Section -->
+    <section id="dossier" class="section-darker">
+        <div class="container">
+            <h2 class="section-title">IV. The Comparative Dossier (PEST)</h2>
+            <p class="section-desc">PEST analysis reveals structural differences across Political, Economic, Social, and Technological dimensions.</p>
+            
+            <div class="pest-interface">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab('political')">
+                        <i class="fas fa-landmark"></i> Political
+                    </button>
+                    <button class="tab-btn" onclick="openTab('economic')">
+                        <i class="fas fa-coins"></i> Economic
+                    </button>
+                    <button class="tab-btn" onclick="openTab('social')">
+                        <i class="fas fa-users"></i> Social
+                    </button>
+                    <button class="tab-btn" onclick="openTab('technological')">
+                        <i class="fas fa-microchip"></i> Technological
+                    </button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- Political Content -->
+                    <div id="political" class="content-pane active">
+                        <div class="pane-grid">
+                            <div class="col">
+                                <h4 class="red-text">🇺🇷 Soviet Centralization (1954–1965)</h4>
+                                <p><strong>Decision-Making:</strong> Moscow (Kremlin) controls all major decisions. Kazakhstan is regional administrator, not autonomous actor.</p>
+                                <p><strong>Leadership:</strong> Nikita Khrushchev (USSR), Piotr Panov → Dinmukhamed Kunaev (Kazakhstan First Secretary).</p>
+                                <p><strong>Ideology:</strong> De-Stalinization but strict Communist orthodoxy. "Building Communism" is central narrative.</p>
+                                <p><strong>Governance:</strong> Communist Party directs all state institutions. No separation of powers. Five-year plans dictate economic priorities.</p>
+                                <p><strong>Propaganda:</strong> "Virgin Lands" portrayed as great Soviet achievement, proof of socialist superiority over capitalism.</p>
+                            </div>
+                            <div class="col border-left">
+                                <h4 class="teal-text">🇰🇿 Super-Presidential Model (1999–2012)</h4>
+                                <p><strong>Decision-Making:</strong> President Nursultan Nazarbayev concentrates power. Kazakhstan is independent actor on world stage.</p>
+                                <p><strong>Leadership:</strong> Nursultan Nazarbayev (1990–2019), strong vertical power structure (силовая вертикаль).</p>
+                                <p><strong>Ideology:</strong> "Kazakhstan 2030" → "Kazakhstan 2050". Nation-building, secular, multi-vector diplomacy.</p>
+                                <p><strong>Governance:</strong> Formal democracy with strong executive dominance. Parliament rubber-stamps decisions. Limited checks and balances.</p>
+                                <p><strong>International Relations:</strong> Balances relations with Russia, China, West. Joins WTO (2015), Shanghai Cooperation Organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Economic Content -->
+                    <div id="economic" class="content-pane">
+                        <div class="pane-grid">
+                            <div class="col">
+                                <h4 class="red-text">📦 Soviet Command Economy (1954–1965)</h4>
+                                <p><strong>System:</strong> Centrally planned economy. Gosplan (Soviet State Planning Committee) allocates resources.</p>
+                                <p><strong>Priority Sector:</strong> Agriculture (grain) and heavy industry (coal, steel, oil refining).</p>
+                                <p><strong>Financing:</strong> State budgets capital from center. No foreign investment. Barter and internal transfers dominate.</p>
+                                <p><strong>Employment:</strong> Full employment guaranteed but controlled by state. Worker mobility restricted (propiska system).</p>
+                                <p><strong>Problems:</strong> Ecological damage (soil salinization, desertification). Crop failures due to weather and poor planning.</p>
+                                <p><strong>Growth Model:</strong> Extensive (more labor/resources), not intensive (efficiency). Waste high.</p>
+                            </div>
+                            <div class="col border-left">
+                                <h4 class="teal-text">💰 Market Economy (1999–2012)</h4>
+                                <p><strong>System:</strong> Market-oriented with state guidance. Transition from Soviet planning to capitalism (shock therapy, 1990s).</p>
+                                <p><strong>Priority Sector:</strong> Hydrocarbons (oil & natural gas). Secondary: banking, services, ICT.</p>
+                                <p><strong>Financing:</strong> Foreign Direct Investment (FDI) dominates. Multinational corporations (Chevron, ExxonMobil, Shell) operate major fields.</p>
+                                <p><strong>Employment:</strong> Labor market liberalized. Private sector dominance. Workers migrate freely (internal + international).</p>
+                                <p><strong>Growth Model:</strong> Intensive (efficiency) based on resource extraction and market-driven reforms.</p>
+                                <p><strong>Results:</strong> GDP per capita: $1,200 (1999) → $12,000 (2012). Massive wealth accumulation in National Fund.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Content -->
+                    <div id="social" class="content-pane">
+                        <div class="pane-grid">
+                            <div class="col">
+                                <h4 class="red-text">🗣️ Russification & "Homo Sovieticus" (1954–1965)</h4>
+                                <p><strong>Language Policy:</strong> Russian is lingua franca. Kazakh schools closed or restricted. Education in Russian dominates.</p>
+                                <p><strong>Demographics:</strong> Massive Slavic migration. Russians, Ukrainians, Belarusians become ~70% of urban population.</p>
+                                <p><strong>Identity:</strong> "Soviet People" concept promoted. Ethnic identities subordinated to Communist ideology.</p>
+                                <p><strong>Culture:</strong> Soviet symbols (Lenin, October Revolution) replace Kazakh traditions. Nauryz and other holidays suppressed.</p>
+                                <p><strong>Values:</strong> Collectivism, industriousness, loyalty to Communist Party. Individual expression limited.</p>
+                                <p><strong>Result:</strong> Kazakhs become demographic minority in their homeland; cultural erosion.</p>
+                            </div>
+                            <div class="col border-left">
+                                <h4 class="teal-text">🎭 Kazakhization & National Revival (1999–2012)</h4>
+                                <p><strong>Language Policy:</strong> Kazakh becomes state language (1989, then reinforced). Education shift to Kazakh medium (gradual).</p>
+                                <p><strong>Repatriation Program (Оralmanы):</strong> 1M+ ethnic Kazakhs from diaspora (China, Mongolia, Iran, Egypt) encouraged to return.</p>
+                                <p><strong>Demographics:</strong> Kazakhs recover majority status (63% by 2009). Slavic population (Russians, Ukrainians) emigrate (~4.7M → ~3.8M).</p>
+                                <p><strong>Cultural Renaissance:</strong> Return of Kazakh holidays (Nauryz), symbols (Golden Man statue), historical narratives.</p>
+                                <p><strong>Values:</strong> National pride, interethnic concord (but Kazakh primacy). Modern identity mixing tradition + modernity.</p>
+                                <p><strong>Result:</strong> Kazakhs restored as dominant group; reclaimed agency over national narrative.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technological Content -->
+                    <div id="technological" class="content-pane">
+                        <div class="pane-grid">
+                            <div class="col">
+                                <h4 class="red-text">🔧 Soviet-Era Tech (1954–1965)</h4>
+                                <p><strong>Agriculture:</strong> Mechanization via tractors, harvesters (MTS stations). Chemical fertilizers and pesticides introduced (environmental costs).</p>
+                                <p><strong>Industry:</strong> Coal mining mechanized. Steel production via open-hearth furnaces. Oil refining established.</p>
+                                <p><strong>Infrastructure:</strong> Railways expanded. Electricity grid extended (Soviet hydropower projects).</p>
+                                <p><strong>Space:</strong> Baikonur Cosmodrome (Baykonur) becomes operational (1957). Soviet space program showcases technological prowess.</p>
+                                <p><strong>Limitations:</strong> Soviet tech behind Western standards. Inefficiency in resource use. Environmental monitoring absent.</p>
+                            </div>
+                            <div class="col border-left">
+                                <h4 class="teal-text">🌐 Modern Tech Era (1999–2012)</h4>
+                                <p><strong>Oil & Gas:</strong> Advanced extraction tech (Kashagan uses deep-water platforms, advanced seismic imaging).</p>
+                                <p><strong>IT Revolution:</strong> Telecommunications boom. Mobile networks (GSM) expand rapidly (Beeline, Kcell, Tele2).</p>
+                                <p><strong>Infrastructure:</strong> Astana built with modern tech (smart building systems, renewable energy integration).</p>
+                                <p><strong>Transportation:</strong> Railway modernization. Road networks expanded. Air transport becomes accessible.</p>
+                                <p><strong>Innovation:</strong> Tech parks established (Astana High-Tech Park, 2006). Software development sector grows.</p>
+                                <p><strong>Global Integration:</strong> Internet penetration rises (1% → 30% by 2012). Kazakhstan connects to global supply chains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PEST Comparison Master Table -->
+            <div class="pest-table-master">
+                <h3>PEST Comparison: Comprehensive Overview</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dimension</th>
+                            <th>1954–1965 (Soviet Era)</th>
+                            <th>1999–2012 (Independence)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>POLITICAL</strong></td>
+                            <td>Centralized USSR control; Regional administrator status; Communist Party monopoly</td>
+                            <td>Independent nation; Super-presidential system; Multi-vector diplomacy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ECONOMIC</strong></td>
+                            <td>Command economy; Planned allocation; Agriculture + heavy industry; No FDI</td>
+                            <td>Market economy; Private enterprise; Hydrocarbon extraction; Massive FDI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SOCIAL</strong></td>
+                            <td>Russification; Demographic shift (Kazakhs 29%); "Soviet People" identity</td>
+                            <td>Kazakhization; Demographic recovery (Kazakhs 63%); National identity revival</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TECHNOLOGICAL</strong></td>
+                            <td>Mechanization (agriculture); Soviet industrialization; Baikonur space program</td>
+                            <td>Advanced oil extraction; IT/telecom boom; Modern urban infrastructure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section-paper">
+        <div class="container">
+            <h2 class="section-title">V. Chronological Timeline: Key Events</h2>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-track">
+                    <!-- 1954 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content red-timeline">
+                            <h4>1954</h4>
+                            <p><strong>Virgin Lands Campaign Launched</strong></p>
+                            <p>Khrushchev decrees opening of 25M hectares of steppe for agriculture. First wave of settlers (целинники) departs from western USSR.</p>
+                        </div>
+                    </div>
+
+                    <!-- 1957 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content red-timeline">
+                            <h4>1957</h4>
+                            <p><strong>Sputnik Launched</strong></p>
+                            <p>Soviet space program triumphalism. Baikonur (Baykonur) Cosmodrome in Kazakhstan demonstrates Soviet technological prowess globally.</p>
+                        </div>
+                    </div>
+
+                    <!-- 1959 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content red-timeline">
+                            <h4>1959</h4>
+                            <p><strong>Kazakh Demographic Nadir</strong></p>
+                            <p>Kazakhs reach historical minimum: 29% of population. Russian dominance at peak. Urban centers overwhelmingly Slavic.</p>
+                        </div>
+                    </div>
+
+                    <!-- 1965 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content red-timeline">
+                            <h4>1965</h4>
+                            <p><strong>End of Virgin Lands Campaign</strong></p>
+                            <p>Harvest failures. Khrushchev ousted (1964). Campaign winds down. Transition to "Stagnation Era" (застой) begins.</p>
+                        </div>
+                    </div>
+
+                    <!-- 1991 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content teal-timeline">
+                            <h4>1991</h4>
+                            <p><strong>Kazakhstan Declares Independence</strong></p>
+                            <p>USSR collapses. Kazakhstan becomes sovereign state under Nursultan Nazarbayev. Economic transition begins (shock therapy).</p>
+                        </div>
+                    </div>
+
+                    <!-- 1999 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content teal-timeline">
+                            <h4>1999</h4>
+                            <p><strong>Oil Prices Surge</strong></p>
+                            <p>Global energy market boom. Brent crude rises from $15 to $25+ per barrel. Foreign investment floods Kazakhstan.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2000 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content teal-timeline">
+                            <h4>2000</h4>
+                            <p><strong>National Fund Established</strong></p>
+                            <p>Kazakhstan creates sovereign wealth fund to manage oil revenues prudently. Accumulation begins (eventually reaches $70B+).</p>
+                        </div>
+                    </div>
+
+                    <!-- 2006 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content teal-timeline">
+                            <h4>2006</h4>
+                            <p><strong>Capital Moves to Astana</strong></p>
+                            <p>Astana officially becomes capital (replacing Almaty). Modern city emerges from steppe. Symbol of independent Kazakhstan.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2008-2009 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content teal-timeline">
+                            <h4>2008–2009</h4>
+                            <p><strong>Global Financial Crisis</strong></p>
+                            <p>Oil prices collapse ($147 → $30). Kazakhstan's economy slows (but recovers faster than many nations). National Fund acts as stabilizer.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2009 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content teal-timeline">
+                            <h4>2009</h4>
+                            <p><strong>Kazakhs Become Majority</strong></p>
+                            <p>Demographic reversal complete. Kazakhs: 63%, Russians: 24%. Result of repatriation program and Slavic emigration. National identity consolidated.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2012 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content teal-timeline">
+                            <h4>2012</h4>
+                            <p><strong>Kazakhstan in TOP-50 Developing Economies</strong></p>
+                            <p>GDP per capita reaches ~$12,000. Kazakhstan recognized as upper-middle-income country. Strategic development plan updated (Kazakhstan 2050).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data & Artifacts Section -->
+    <section id="artifacts" class="section-darker">
+        <div class="container">
+            <h2 class="section-title">VI. Data Analysis & Visualizations</h2>
+            
+            <div class="gallery-grid">
+                <!-- Chart 1: Demographics -->
+                <div class="gallery-item large">
+                    <h4 style="text-align: center; margin-bottom: 20px; font-family: var(--font-head);">Chart 1: Ethnic Composition (1959–2012)</h4>
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+
+                <!-- Chart 2: GDP Growth -->
+                <div class="gallery-item large">
+                    <h4 style="text-align: center; margin-bottom: 20px; font-family: var(--font-head);">Chart 2: GDP per Capita Growth</h4>
+                    <canvas id="gdpChart"></canvas>
+                </div>
+
+                <!-- Chart 3: Oil Prices -->
+                <div class="gallery-item large">
+                    <h4 style="text-align: center; margin-bottom: 20px; font-family: var(--font-head);">Chart 3: Oil Prices (1999–2012)</h4>
+                    <canvas id="oilChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Primary Sources -->
+            <div class="gallery-grid" style="margin-top: 60px;">
+                <!-- Source 1 -->
+                <div class="gallery-item doc">
+                    <div class="wax-seal red">USSR</div>
+                    <h5 style="margin-top: 15px;">1954 Decree on Virgin Lands</h5>
+                    <p class="quote">"The cultivation of virgin lands is a task of national importance... Kazakhstan must serve as the breadbasket of the Union..."</p>
+                    <button class="btn-analyze" onclick="alert('ANALYSIS:\n\nAudience: Soviet workers & officials\nIntent: Mobilize support, frame as patriotic duty\nBias: Ignores environmental consequences, frames as inevitable progress\nTone: Authoritative, commanding, optimistic')">
+                        <i class="fas fa-magnifying-glass"></i> Analyze
+                    </button>
+                </div>
+
+                <!-- Source 2 -->
+                <div class="gallery-item doc">
+                    <div class="wax-seal gold">KZ</div>
+                    <h5 style="margin-top: 15px;">Kazakhstan 2030 Strategy (2000)</h5>
+                    <p class="quote">"Our nation will become a leader in innovation... We will leverage our natural resources to build a prosperous, educated, and united Kazakhstan..."</p>
+                    <button class="btn-analyze" onclick="alert('ANALYSIS:\n\nAudience: International investors, Kazakhstan citizens\nIntent: Attract FDI, set national agenda\nBias: Emphasizes opportunity, glosses over governance challenges\nTone: Forward-looking, aspirational, strategic')">
+                        <i class="fas fa-magnifying-glass"></i> Analyze
+                    </button>
+                </div>
+
+                <!-- Source 3: Historical Comparison -->
+                <div class="gallery-item doc">
+                    <h5>Key Statistics Comparison</h5>
+                    <div class="stats-table">
+                        <table>
+                            <tr>
+                                <td><strong>Population (millions)</strong></td>
+                                <td>1954: 6.6 → 1965: 9.2</td>
+                                <td>1999: 14.6 → 2012: 17.3</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kazakh %</strong></td>
+                                <td>1954: 41% → 1965: 32%</td>
+                                <td>1999: 48% → 2012: 63%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Urbanization</strong></td>
+                                <td>1954: 30% → 1965: 41%</td>
+                                <td>1999: 56% → 2012: 73%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GDP per capita</strong></td>
+                                <td>~$1,500 (estimate)</td>
+                                <td>$1,200 → $12,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Lessons Section -->
+    <section id="lessons" class="section-paper">
+        <div class="container">
+            <h2 class="section-title">VII. Key Lessons Learned</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon red-icon">1</div>
+                    <h3>State-Driven Modernization is Powerful but Has Costs</h3>
+                    <p>Both periods showed how state ideology and capital can reshape a nation rapidly. Virgin Lands achieved food production goals but caused ecological damage and cultural erosion. Oil boom brought prosperity but concentrated power.</p>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon teal-icon">2</div>
+                    <h3>Demographics Shape Identity & Politics</h3>
+                    <p>The ethnic composition shift (Kazakhs 41% → 29% → 63%) reflects fundamental changes in power dynamics. Cultural recovery required deliberate policy (Kazakhization, repatriation program).</p>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon red-icon">3</div>
+                    <h3>External Factors Matter</h3>
+                    <p>USSR's Cold War ideology drove Virgin Lands. Global oil market cycle drove post-1999 boom. Kazakhstan benefited from timing and geography.</p>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon teal-icon">4</div>
+                    <h3>Economic Model Shapes Social Outcomes</h3>
+                    <p>Soviet planned economy with Russian dominance ≠ Market economy with Kazakh majority. System change enabled (though didn't guarantee) national sovereignty.</p>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon red-icon">5</div>
+                    <h3>Environmental Consequences Are Long-Term</h3>
+                    <p>Virgin Lands caused soil erosion, salinization, and Aral Sea crisis (with neighbors). Modern oil extraction also poses environmental risks (pollution, climate change).</p>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon teal-icon">6</div>
+                    <h3>Nation-Building Requires Strategic Consistency</h3>
+                    <p>Kazakhstan's success in the 2000s partly reflects consistent strategy (Nazarbayev's stability, National Fund, Astana as symbol). Long-term thinking pays off.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Questions -->
+    <section id="questions" class="section-darker">
+        <div class="container">
+            <h2 class="section-title">VIII. Questions for Reflection & Discussion</h2>
+            
+            <div class="qa-section">
+                <div class="qa-item">
+                    <h4>1. Continuity or Discontinuity?</h4>
+                    <p>In what ways are the 1954–1965 and 1999–2012 periods similar, and in what ways fundamentally different? Is there a line of causation, or are they separate epochs?</p>
+                </div>
+
+                <div class="qa-item">
+                    <h4>2. Who Benefited and Who Suffered?</h4>
+                    <p>Virgin Lands brought misery to many (environmental destruction, Kazakh erasure). Oil boom brought wealth but also inequality, corruption risks. How do we weigh gains vs. losses?</p>
+                </div>
+
+                <div class="qa-item">
+                    <h4>3. Was Kazakhization Necessary or Excessive?</h4>
+                    <p>Given Russian/Soviet historical dominance, was active Kazakhization justified? Did it go too far, or was it necessary for national survival?</p>
+                </div>
+
+                <div class="qa-item">
+                    <h4>4. Is Reliance on Oil Sustainable?</h4>
+                    <p>Kazakhstan's prosperity in 2012 depended heavily on oil wealth. What happens if prices crash? Is diversification possible?</p>
+                </div>
+
+                <div class="qa-item">
+                    <h4>5. What Lessons for Kazakhstan's Future?</h4>
+                    <p>What did these two eras teach about governance, economic policy, and identity? How should these lessons inform 2024+ strategy?</p>
+                </div>
+
+                <div class="qa-item">
+                    <h4>6. International Dimension</h4>
+                    <p>How did Kazakhstan's relationship with Russia, the West, China, and regional powers evolve between these periods? What changed and why?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section-paper">
+        <div class="container">
+            <h2 class="section-title">IX. References & Sources</h2>
+            
+            <div class="references-list">
+                <h3>Academic Books & Monographs</h3>
+                <ul>
+                    <li>Olcott, M. B. (2010). <em>Kazakhstan: Unfulfilled Promise?</em> Carnegie Endowment for International Peace.</li>
+                    <li>Dave, B. (2007). <em>Kazakhstan: Ethnicity, Language and Power.</em> Routledge.</li>
+                    <li>Svanberg, I. (Ed.). (1999). <em>Kazakh Identity: From Tribal to National.</em> Routledge.</li>
+                    <li>Mandel, R. (2002). <em>Porous Borders: Multistate Ethnography at the Margins of the Postsocialist World.</em> Indiana University Press.</li>
+                </ul>
+
+                <h3>Articles & Journals</h3>
+                <ul>
+                    <li>Cummings, S. N. (2005). "Kazakhstan's Path to Development: Strategy and Implementation." <em>Central Asian Survey</em>, 24(4), 371–383.</li>
+                    <li>Junisbai, B. (2010). "The Intra-Muslim Dynamics of Secularization in Kazakhstan." <em>Journal of Muslim Minority Affairs</em>, 30(2), 283–301.</li>
+                    <li>Schatz, E. (2004). "What Capital Cities Say About State: Ideologies and Political Networks in the Former Soviet Union." <em>Post-Soviet Affairs</em>, 19(3), 315–337.</li>
+                </ul>
+
+                <h3>Government & Official Documents</h3>
+                <ul>
+                    <li>Republic of Kazakhstan (1997). "Strategic Plan of Development of Kazakhstan to 2030."</li>
+                    <li>Republic of Kazakhstan (2012). "Kazakhstan 2050 Strategy: New Political Course of the Established State."</li>
+                    <li>Bureau of National Statistics (https://stat.gov.kz/). Population and demographic data.</li>
+                </ul>
+
+                <h3>Online Resources</h3>
+                <ul>
+                    <li>Google Scholar (https://scholar.google.com/): Search "Kazakhstan Virgin Lands," "Kazakhstan oil economy"</li>
+                    <li>Semantic Scholar (https://www.semanticscholar.org/): Advanced academic search</li>
+                    <li>World Bank Open Data: Economic indicators, GDP per capita</li>
+                    <li>Our World in Data: Historical population, urbanization, energy data</li>
+                </ul>
+
+                <h3>Multimedia & Archives</h3>
+                <ul>
+                    <li>Khabar TV YouTube Channel: Documentaries on Kazakhstan history</li>
+                    <li>Maya Bekbayeva's Documentary Series: Soviet-era and independence-era history</li>
+                    <li>Wikimedia Commons: Historical photographs (public domain)</li>
+                    <li>British Path / British Movietone News: Archival footage of Soviet era</li>
+                </ul>
+
+                <h3>Note on AI Usage</h3>
+                <p><strong>Disclosure:</strong> This presentation was enhanced using AI language models (ChatGPT, Claude) for content structure, data synthesis, and visualization suggestions. All factual claims have been cross-checked against academic sources and official statistics. Images are sourced from public archives (Wikimedia Commons, government repositories).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="epilogue">
+        <div class="container">
+            <h3 style="font-family: var(--font-head); font-size: 2rem; margin-bottom: 20px;">Final Verdict</h3>
+            <p class="conclusion">
+                "History rhymes but does not repeat. Both 1954–1965 and 1999–2012 saw massive state-driven modernization powered by natural resources. Yet the <strong>direction shifted</strong> from serving an Empire to building a Nation. The steppe that once fed the USSR now fuels an independent Kazakhstan. The challenge ahead is ensuring prosperity benefits all Kazakhs while learning from the environmental and social costs of yesterday's dreams."
+            </p>
+            <div class="credits">
+                &copy; 2026 By VL<br>
+                <small>Last updated: January 2026 | Contact instructors for methodology questions</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
